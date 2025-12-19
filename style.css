@@ -1,0 +1,32 @@
+body {
+  background: linear-gradient(135deg, #ffd6f6, #cce7ff);
+  font-family: "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #5b2d8b;
+}
+
+.pets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pet {
+  background: white;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.pet:hover {
+  transform: scale(1.05);
+}
