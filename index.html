@@ -6,26 +6,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>My Pet World 🐾</h1>
+<h1>Welcome 🌟</h1>
+<p>Create your profile</p>
 
-<p>Choose your pet:</p>
+<div class="profile-setup">
 
-<div class="pets">
-  <div class="pet">
-    <p>🐶 Golden Retriever</p>
+  <input type="text" id="username" placeholder="Your name">
+
+  <input type="password" id="pin" placeholder="4-digit PIN">
+
+  <p>Choose a profile picture:</p>
+
+  <div class="pfp-options">
+    <img src="images/pfp1.png" onclick="selectPFP('pfp1.png')">
+    <img src="images/pfp2.png" onclick="selectPFP('pfp2.png')">
+    <img src="images/pfp3.png" onclick="selectPFP('pfp3.png')">
   </div>
 
-  <div class="pet">
-    <p>🐶 Dalmatian</p>
-  </div>
+  <button onclick="createProfile()">Start</button>
 
-  <div class="pet">
-    <p>🐱 Grey Cat</p>
-  </div>
-
-  <div class="pet">
-    <p>🐱 Ginger Cat</p>
-  </div>
-</div> 
+</div>
 </body>
 </html>
