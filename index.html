@@ -6,24 +6,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Welcome 🌟</h1>
-<p>Create your profile</p>
+<h1>Welcome Back 🌟</h1>
 
-<div class="profile-setup">
+<div class="signin-box">
 
-  <input type="text" id="username" placeholder="Your name">
+  <input type="text" id="username" placeholder="Name">
 
-  <input type="password" id="pin" placeholder="4-digit PIN">
+  <input type="password" id="pin" placeholder="PIN">
 
-  <p>Choose a profile picture:</p>
+  <button onclick="signIn()">Sign In</button>
 
-  <div class="pfp-options">
-    <img src="images/pfp1.png" onclick="selectPFP('pfp1.png')">
-    <img src="images/pfp2.png" onclick="selectPFP('pfp2.png')">
-    <img src="images/pfp3.png" onclick="selectPFP('pfp3.png')">
-  </div>
+  <p>New here?</p>
 
-  <button onclick="createProfile()">Start</button>
+  <button onclick="goToSetup()">Create Account</button>
 
 </div>
 </body>
