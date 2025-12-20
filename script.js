@@ -1,10 +1,3 @@
-function goToSetup() {
-  window.location.href = "setup.html";
-}
-
-function signIn() {
-  alert("Sign in coming next!");
-}
 function finishSetup() {
   const name = document.getElementById("newUsername").value;
   const pin = document.getElementById("newPin").value;
