@@ -1,16 +1,13 @@
-function finishSetup() {
-  const name = document.getElementById("newUsername").value;
-  const pin = document.getElementById("newPin").value;
+function signIn() {
+  const enteredName = document.getElementById("username").value;
+  const enteredPin = document.getElementById("pin").value;
 
-  if (name === "" || pin === "") {
-    alert("Please enter a name and PIN");
-    return;
+  const savedName = localStorage.getItem("username");
+  const savedPin = localStorage.getItem("pin");
+
+  if (enteredName === savedName && enteredPin === savedPin) {
+    window.location.href = "home.html";
+  } else {
+    alert("Incorrect name or PIN");
   }
-
-  localStorage.setItem("username", name);
-  localStorage.setItem("pin", pin);
-
-  alert("Account created! Please sign in.");
-
-  window.location.href = "index.html";
 }
